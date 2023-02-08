@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../images/trading.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 80px;
+    background-color: #494848;
+    color: #fff;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 50px;
+    border-radius: 75%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+header>nav>ul>li>a:hover{
+    background-color: #fff;
+    color: #f10000;
+}
+
+header>nav>ul>li{
+    display: inline-block;
+    line-height: 80px;
+    /* margin: 0 10px; */
+}
+
+header>nav>ul{
+    float: right;
+    list-style: none;
+}
+
+header>nav{
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.logo{
+    float: left;
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about{
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+
+.services{
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 24px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+
+.list1 {
+    list-style: none;
+    text-align: center;
+    font-size: 22px;
+    margin: 50px 0;
+    padding: 20px;
+  }
+  
+.list1>li {
+    margin-right: 20px;
+    color: #ccc3c3;
+    font-weight: 600;
+    padding: 20px 0;
+  }  
+
+.contact-info{
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 24px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+
+.list2{
+    list-style: none;
+    text-align: center;
+    font-size: 22px;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.list2>li {
+    margin-right: 20px;
+    color: #ccc3c3;
+    font-weight: 600;
+    padding: 20px 0;
+  }  
+
+
+  @media only screen and (max-width:768px){
+    header>nav>ul>li>a{
+        font-size: 18px;
+        padding: 0px 30px;
+    }
+
+    header{
+        height: 60px;
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+
+    .about{
+        font-size: 30px;
+    }
+
+    .services{
+        font-size: 30px;
+    }
+
+    .list1 {
+        font-size: 20px;
+    }
+
+    .list2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    header>nav>ul>li>a{
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+
+    header{
+        height: 50px;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .about{
+        font-size: 25px;
+    }
+
+    .services{
+        font-size: 25px;
+    }
+
+    .list1 {
+        font-size: 18px;
+    }
+
+    .list2 {
+        font-size: 18px;
+    }
+}
