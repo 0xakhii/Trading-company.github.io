@@ -1,31 +1,224 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Thomas trading</title>
-    </head>
-    <link rel="stylesheet" href="style/style.css">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Contact</a></li>
-            </ul>
-            <h1 class="logo">Thomas trading</h1>
-        </nav>
-    </header>
-    <body>
-        <p class="about">Thomas trading is a company that help you to trade in the stock market.</p>
-        <p class="services">Our services:</p>
-        <ul class="list1">
-            <li>Stock market</li>
-            <li>Forex</li>
-            <li>Crypto</li>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thomas Trading</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+      .jumbotron {
+        background-image: url('./images/trading.jpg');
+        background-size: cover;
+        height: 500px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+      }
+
+      .jumbotron h1 {
+        font-size: 5em;
+        font-weight: bold;
+      }
+
+      .jumbotron p {
+        font-size: 1.5em;
+      }
+
+      .services {
+        background-color: #F7F7F7;
+        padding: 40px 0;
+      }
+
+      .services h2 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+
+      .services .card {
+        background-color: white;
+        box-shadow: 2px 2px 4px #000000;
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 40px;
+      }
+
+      .services .card h3 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .services .card p {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+
+      .services .card button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .services .card button:hover {
+        background-color: white;
+        color: #333;
+        cursor: pointer;
+      }
+
+      .contact {
+        background-color: #333;
+        color: white;
+        padding: 40px 0;
+      }
+
+      .contact h2 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+
+      .contact form {
+        background-color: white;
+        box-shadow: 2px 2px 4px #000000;
+        padding: 40px;
+        color: #333;
+        text-align: center;
+      }
+
+      .contact form label {
+        display: block;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    }
+    .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .contact form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .contact form input[type="submit"]:hover {
+    background-color: white;
+    color: #333;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Thomas Trading</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
-        <p class="contact-info">Our contact information:</p>
-        <ul class="list2">
-            <li>Phone: 0631402056</li>
-            <li>Email: brahimthomas08@gmail.com</li>
-            <li>Address: Morocco,Marrakech</li>
-        </ul>
-    </body>
-</html>
+      </div>
+    </nav>
+  </header>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-4">Thomas Trading</h1>
+      <p class="lead">We provide world-class trading services</p>
+    </div>
+  </section>
+  
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="text-center">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/stock.jpg" alt="Stock Trading" class="card-img-top">
+            <div class="card-body">
+              <h3>Stock Trading</h3>
+              <p>We offer a wide range of stock trading services, from buying and selling stocks to providing investment advice and portfolio management. Our team of experts will work with you to achieve your financial goals and grow your wealth over time.</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card">
+            <img src="./images/forex.jpg" alt="Forex Trading" class="card-img-top">
+            <div class="card-body">
+            <h3>Forex Trading</h3>
+            <p>Our forex trading services allow you to trade currencies from around the world and take advantage of fluctuations in exchange rates. Our team of experts will provide you with the latest market insights and strategies to help you succeed in the world of forex trading.</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card">
+            <img src="./images/Commodities.jpg" alt="Commodities Trading" class="card-img-top">
+            <div class="card-body">
+            <h3>Commodities Trading</h3>
+            <p>We provide a variety of commodities trading services, from buying and selling precious metals to trading oil and gas futures. Our team of experts will work with you to find the best investment opportunities in the commodities market and help you make informed trading decisions.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container">
+                  <h2 class="text-center">About Us</h2>
+                  <p>Thomas Trading is a world-class trading company that provides a wide range of trading services to individuals and businesses. Our team of experts has years of experience in the trading industry and is committed to providing the best possible service to our clients. We believe in transparency, honesty, and providing value to our clients at all times.</p>
+                </div>
+              </section>
+              
+              <section class="contact" id="contact">
+                <div class="container">
+                  <h2 class="text-center">Contact Us</h2>
+                  <form action="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+              </section>
+              
+              <footer>
+                <p>Copyright &copy; Thomas Trading 2023</p>
+              </footer>
+</body>
+</html>                
