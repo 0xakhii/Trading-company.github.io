@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thomas Trading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/70a2f6d875.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
       .jumbotron {
@@ -133,92 +135,120 @@
     margin: 0;
     font-size: 1.2em;
   }
-</style>
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Thomas Trading</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="display-4">Thomas Trading</h1>
-      <p class="lead">We provide world-class trading services</p>
-    </div>
-  </section>
-  
-  <section class="services" id="services">
-    <div class="container">
-      <h2 class="text-center">Our Services</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="./images/stock.jpg" alt="Stock Trading" class="card-img-top">
-            <div class="card-body">
-              <h3>Stock Trading</h3>
-              <p>We offer a wide range of stock trading services, from buying and selling stocks to providing investment advice and portfolio management. Our team of experts will work with you to achieve your financial goals and grow your wealth over time.</p>
-            </div>
-            </div>
-            </div>
+  .contact-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.icon-container {
+  display: inline-block;
+  margin: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-container i {
+  font-size: 36px;
+  color: #333;
+  margin: 50px 50px;
+}
+
+.icon-container:hover {
+  transform: translateY(-10px);
+}
+
+.icon-container:hover i {
+  color: #0077FF;
+}
+
+
+    </style>
+    </head>
+    <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Thomas Trading</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <section class="jumbotron text-center">
+        <div class="container">
+        <h1 class="display-4">Thomas Trading</h1>
+        <p class="lead">We provide world-class trading services</p>
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+        <div class="container">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row">
             <div class="col-md-4">
             <div class="card">
-            <img src="./images/forex.jpg" alt="Forex Trading" class="card-img-top">
-            <div class="card-body">
-            <h3>Forex Trading</h3>
-            <p>Our forex trading services allow you to trade currencies from around the world and take advantage of fluctuations in exchange rates. Our team of experts will provide you with the latest market insights and strategies to help you succeed in the world of forex trading.</p>
-            </div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="card">
-            <img src="./images/Commodities.jpg" alt="Commodities Trading" class="card-img-top">
-            <div class="card-body">
-            <h3>Commodities Trading</h3>
-            <p>We provide a variety of commodities trading services, from buying and selling precious metals to trading oil and gas futures. Our team of experts will work with you to find the best investment opportunities in the commodities market and help you make informed trading decisions.</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-            <section class="about" id="about">
-                <div class="container">
-                  <h2 class="text-center">About Us</h2>
-                  <p>Thomas Trading is a world-class trading company that provides a wide range of trading services to individuals and businesses. Our team of experts has years of experience in the trading industry and is committed to providing the best possible service to our clients. We believe in transparency, honesty, and providing value to our clients at all times.</p>
+                <img src="./images/stock.jpg" alt="Stock Trading" class="card-img-top">
+                <div class="card-body">
+                <h3>Stock Trading</h3>
+                <p>We offer a wide range of stock trading services, from buying and selling stocks to providing investment advice and portfolio management. Our team of experts will work with you to achieve your financial goals and grow your wealth over time.</p>
                 </div>
-              </section>
-              
-              <section class="contact" id="contact">
-                <div class="container">
-                  <h2 class="text-center">Contact Us</h2>
-                  <form action="">
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <input type="submit" value="Submit">
-                  </form>
                 </div>
-              </section>
-              
-              <footer>
-                <p>Copyright &copy; Thomas Trading 2023</p>
-              </footer>
-</body>
-</html>                
+                </div>
+                <div class="col-md-4">
+                <div class="card">
+                <img src="./images/forex.jpg" alt="Forex Trading" class="card-img-top">
+                <div class="card-body">
+                <h3>Forex Trading</h3>
+                <p>Our forex trading services allow you to trade currencies from around the world and take advantage of fluctuations in exchange rates. Our team of experts will provide you with the latest market insights and strategies to help you succeed in the world of forex trading.</p>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="card">
+                <img src="./images/Commodities.jpg" alt="Commodities Trading" class="card-img-top">
+                <div class="card-body">
+                <h3>Commodities Trading</h3>
+                <p>We provide a variety of commodities trading services, from buying and selling precious metals to trading oil and gas futures. Our team of experts will work with you to find the best investment opportunities in the commodities market and help you make informed trading decisions.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+                <section class="about" id="about">
+                    <div class="container">
+                    <h2 class="text-center">About Us</h2>
+                    <p>Thomas Trading is a world-class trading company that provides a wide range of trading services to individuals and businesses. Our team of experts has years of experience in the trading industry and is committed to providing the best possible service to our clients. We believe in transparency, honesty, and providing value to our clients at all times.</p>
+                    </div>
+                </section>
+                <div class="contact-section">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with us via:</p>
+                    <div class="contact-icons">
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/brahim_thomas_">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=0631402056">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    </div>
+                </div>              
+                <footer>
+                    <p>Copyright &copy; Thomas Trading 2023</p>
+                </footer>
+    </body>
+</html>
