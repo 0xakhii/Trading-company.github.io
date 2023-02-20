@@ -9,6 +9,51 @@
     <link rel="stylesheet" href="https://kit.fontawesome.com/70a2f6d875.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
+      .dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .jumbotron {
+  background-image: url('./images/trading-dark.jpg');
+  text-shadow: none;
+}
+
+.dark-mode .services {
+  background-color: #333;
+}
+
+.dark-mode .services .card {
+  background-color: #222;
+  color: #fff;
+  box-shadow: 2px 2px 4px #fff;
+}
+
+.dark-mode .services .card button {
+  background-color: #fff;
+  color: #222;
+}
+
+.dark-mode .contact {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .contact form {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .contact form label {
+  color: #fff;
+}
+
+.dark-mode .contact form input,
+.dark-mode .contact form textarea {
+  background-color: #fff;
+  color: #222;
+}
+
       .jumbotron {
         background-image: url('./images/trading.jpg');
         background-size: cover;
@@ -191,7 +236,7 @@
         <p class="lead">We provide world-class trading services</p>
         </div>
     </section>
-    
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
     <section class="services" id="services">
         <div class="container">
         <h2 class="text-center">Our Services</h2>
@@ -251,4 +296,13 @@
                     <p>Copyright &copy; Thomas Trading 2023</p>
                 </footer>
     </body>
+  <script>
+  const toggleDarkMode = () => {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+  };
+
+  const darkModeToggle = document.querySelector('#dark-mode-toggle');
+  darkModeToggle.addEventListener('click', toggleDarkMode);
+</script>
 </html>
